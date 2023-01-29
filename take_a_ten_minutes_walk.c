@@ -1,4 +1,6 @@
 #include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 /*
@@ -17,6 +19,9 @@ It will never give you an empty array (that's not a walk, that's standing still!
 
 bool isValidWalk(const char *walk)
 {
+    if(strlen(walk) != 10)
+        return (false);
+
     int i = 0;
     int x = 0;
     int y = 0;

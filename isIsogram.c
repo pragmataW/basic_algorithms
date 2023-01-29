@@ -33,7 +33,7 @@ bool IsIsogram (const char *string)
     int j;
     int checker = 0;
     char *upStr;
-
+    
     upStr = upperCase(string);
     while (upStr[i])
     {
